@@ -1,0 +1,17 @@
+{
+  "name": "jsAB",
+  "homepage": "https://github.com/KingCastorius/css-grid",
+  "authors": [
+    "KingCastorius <malizakzorz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
