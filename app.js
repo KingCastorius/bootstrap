@@ -6,7 +6,30 @@ let opt2 = document.getElementById('opt2');
 let opt3 = document.getElementById('opt3');
 let opt4 = document.getElementById('opt4');
 
+let newQuestion = document.getElementById('newQuestion');
+let newAnswer = document.getElementById('newAnswer');
+let newOpt1 = document.getElementById('newOpt1');
+let newOpt2 = document.getElementById('newOpt2');
+let newOpt3 = document.getElementById('newOpt3');
+let newOpt4 = document.getElementById('newOpt4');
+
+
+
+
 class Quiz {
+
+  addQuestion() {
+    console.log('hello')
+    this.questions.push({
+      question: newQuestion.value,
+      options: [newOpt1.value, newOpt2.value, newOpt3.value, newOpt4.value,],
+      answer: newAnswer.value
+    })
+
+    alert('question added!')
+  }
+
+
   constructor(progress, grade, questions) {
     this.progress = 0;
     this.grade = 0;
@@ -54,4 +77,8 @@ function grade() {
     }
   }
   alert(`You scored ${quiz.grade}/${quiz.questions.length}`);
+}
+
+function addQuestion() {
+  quiz.addQuestion();
 }
